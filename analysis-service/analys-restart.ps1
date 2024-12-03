@@ -16,10 +16,6 @@ param(
     [Parameter(Mandatory=$True,Position=3)]
     [ValidateLength(1,100)]
     [string]$AnalysisServerName,
-
-    [Parameter(Mandatory=$True,Position=4)]
-    [ValidateLength(1,100)]
-    [string]$ServerLocation,
 )
 
 # Stop on all kinds of errors
