@@ -15,7 +15,10 @@ param(
     [Parameter(Mandatory=$True,Position=3)]
     [ValidateSet('Resume','Suspend','Restart')]
     [string]$AnalysisServiceCommand
-    )
+)
+
+# Stop on all kinds of errors
+$ErrorActionPreference = 'Stop'
 
 Connect-AzAccount -Identity
 Select-AzSubscription -Subscription $Subscription
