@@ -14,7 +14,7 @@ param(
 
     [Parameter(Mandatory=$True,Position=3)]
     [ValidateSet('Resume','Suspend','Restart')]
-    [string]$AnalysisServiceCommand,
+    [string]$AnalysisServiceCommand
     )
 
 Connect-AzAccount -Identity
